@@ -1,4 +1,8 @@
 package com.leetcode.practice;
+
+import java.util.HashMap;
+import java.util.Map;
+
 //https://leetcode.com/problems/two-sum/description/
 public class Problem1 {
 
@@ -24,5 +28,20 @@ public class Problem1 {
 		}
         return null;
     }
+	
+	//TC : O(N) , SC : O(N)
+	public static int[] twoSum1(int[] nums, int target) {
+		Map<Integer,Integer> data = new HashMap<>();
+		for(int i=0;i<=nums.length-1;i++) {
+			data.put(nums[i], i);
+		}
+		for(int i=0;i<=nums.length-1;i++) {
+			int num=target-nums[i];
+			if(data.containsKey(num)&& i!=data.get(num)) {
+				return new int[] {i,data.get(num)};
+			}
+		}
+        return null;
+	 }
 
 }

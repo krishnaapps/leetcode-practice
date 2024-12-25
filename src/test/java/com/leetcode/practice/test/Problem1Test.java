@@ -36,5 +36,32 @@ public class Problem1Test {
 		int[] result = Problem1.twoSum(nums,target);
         assertEquals(nums[result[0]]+nums[result[1]], target);
     }
+    
+    @DisplayName("Problem1Test.testInput4()")
+    @Test
+    void testInput4() {
+    	int[] nums = {3,2,4};
+		int target = 6;
+		int[] result = Problem1.twoSum1(nums,target);
+        assertEquals(nums[result[0]]+nums[result[1]], target);
+    }
+    
+    @DisplayName("Problem1Test.testInput5()")
+    @Test
+    void testInput5() {
+    	int[] nums = {2,7,11,15};
+		int target = 9;
+		int[] result = Problem1.twoSum1(nums,target);
+        assertEquals(nums[result[0]]+nums[result[1]], target);
+    }
+    
+    @DisplayName("Problem1Test.testInput6()")
+    @Test
+    void testInput6() {
+    	int[] nums = {3,3};
+		int target = 6;
+		int[] result = Problem1.twoSum1(nums,target);
+        assertEquals(nums[result[0]]+nums[result[1]], target);
+    }
 
 }
