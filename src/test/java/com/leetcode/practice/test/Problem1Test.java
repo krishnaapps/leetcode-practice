@@ -18,5 +18,23 @@ public class Problem1Test {
 		int[] result = Problem1.twoSum(nums,target);
         assertEquals(nums[result[0]]+nums[result[1]], target);
     }
+    
+    @DisplayName("Problem1Test.testInput2()")
+    @Test
+    void testInput2() {
+    	int[] nums = {2,7,11,15};
+		int target = 9;
+		int[] result = Problem1.twoSum(nums,target);
+        assertEquals(nums[result[0]]+nums[result[1]], target);
+    }
+    
+    @DisplayName("Problem1Test.testInput3()")
+    @Test
+    void testInput3() {
+    	int[] nums = {3,3};
+		int target = 6;
+		int[] result = Problem1.twoSum(nums,target);
+        assertEquals(nums[result[0]]+nums[result[1]], target);
+    }
 
 }
