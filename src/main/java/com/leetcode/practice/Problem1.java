@@ -9,7 +9,7 @@ public class Problem1 {
 	public static void main(String[] args) {
 		int[] nums = {3,2,4};
 		int target = 6;
-		int[] result = Problem1.twoSum(nums,target);
+		int[] result = Problem1.twoSum2(nums,target);
 		System.out.println(result[0]+"---"+result[1]);
 
 	}
@@ -43,5 +43,19 @@ public class Problem1 {
 		}
         return null;
 	 }
+	
+	//TC : O(N) , SC : O(N) //one pass Array
+		public static int[] twoSum2(int[] nums, int target) {
+			Map<Integer,Integer> data = new HashMap<>();
+			
+			for(int i=0;i<=nums.length-1;i++) {
+				int num=target-nums[i];
+				if(data.containsKey(num)) {
+					return new int[] {i,data.get(num)};
+				}
+				data.put(nums[i], i);
+			}
+	        return null;
+		 }
 
 }
