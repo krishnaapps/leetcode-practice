@@ -3,7 +3,7 @@ package com.leetcode.practice;
 public class Problem8 {
 
 	public static void main(String[] args) {
-		int[] arr = {1,1,2,2,2,3,3};
+		int[] arr = {1,1,2,2,2,3,3,4};
 		int uniqueLength = Problem8.removeDuplicates(arr);
 		for(int i=0;i<=uniqueLength;i++) {
 			System.out.print(arr[i]+" ");

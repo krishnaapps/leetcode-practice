@@ -10,7 +10,7 @@ public class Problem9 {
 		}
 		
 		int[] data = {1,2,3,4,5,6,7} ;
-		int k=2;
+		int k=3;
 		Problem9.reverseArray(0, data.length-k-1, data);
 		Problem9.reverseArray(data.length-k, data.length-1, data);
 		Problem9.reverseArray(0, data.length-1, data);
