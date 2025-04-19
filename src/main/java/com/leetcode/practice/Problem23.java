@@ -18,6 +18,10 @@ public class Problem23 {
 		int[] nums3 = {2,0,0,0,3}; int target3= 3;
 		
 		Problem23.function(nums3, target3);
+		
+		int[] nums4 = {1, 2, 3, 4, 5, -3, 6, 7, 8}; int target4= 9;
+		
+		Problem23.function(nums4, target4);
 
 	}
 	
